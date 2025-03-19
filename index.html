@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYLE TRENDSTEP LTD | British Menswear</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --accent-color: #c19a6b;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), url('https://images.unsplash.com/photo-1603252110984-3d56b85db691?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .product-card {
+            transition: transform 0.3s;
+            border: 1px solid #eee;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .collection-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--accent-color);
+            color: white;
+            padding: 5px 15px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 导航栏 -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#" style="color: var(--primary-color);">
+            STYLE TRENDSTEP
+        </a>
+    </div>
+</nav>
+
+<!-- 主视觉 -->
+<section class="hero-section">
+    <div class="text-center">
+        <h1 class="display-3 mb-3">Modern British Tailoring</h1>
+        <p class="lead">Crafting Timeless Menswear Since 2023</p>
+    </div>
+</section>
+
+<!-- 精选产品 -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Autumn Collection</h2>
+        
+        <div class="row g-4">
+            <!-- 大衣 -->
+            <div class="col-md-4">
+                <div class="product-card position-relative">
+                    <span class="collection-badge">New Arrival</span>
+                    <img src="https://images.pexels.com/photos/974911/pexels-photo-974911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                         class="img-fluid" 
+                         alt="Wool Overcoat">
+                    <div class="p-3">
+                        <h3>Wool Chesterfield Coat</h3>
+                        <p>Premium British wool | Notch lapel | Dual vent</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 西装 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/449977/pexels-photo-449977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                         class="img-fluid" 
+                         alt="Suit">
+                    <div class="p-3">
+                        <h3>Two-Piece Suit</h3>
+                        <p>Super 150s wool | Slim fit | Functional buttons</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 皮具 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                         class="img-fluid" 
+                         alt="Leather Bag">
+                    <div class="p-3">
+                        <h3>Leather Briefcase</h3>
+                        <p>Full-grain leather | Brass hardware | RFID pocket</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 品牌故事 -->
+<section class="bg-light py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                     class="img-fluid rounded" 
+                     alt="Tailoring">
+            </div>
+            <div class="col-md-6">
+                <h2>Savile Row Heritage</h2>
+                <p class="lead">Founded in the heart of London's fashion district, we combine traditional tailoring techniques with modern design sensibilities. Each garment undergoes 72 quality checks before reaching our clients.</p>
+                <ul class="list-unstyled">
+                    <li>✔️ 100% British wool</li>
+                    <li>✔️ Hand-stitched details</li>
+                    <li>✔️ Lifetime alterations service</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 联系信息 -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Contact</h4>
+                <ul class="list-unstyled">
+                    <li>📞 +44 7512076850</li>
+                    <li>📧 contact@styletrendstep.co.uk</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Legal</h4>
+                <p>Company No. 16323139<br>
+                VAT Number: GB123 4567 89</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Address</h4>
+                <address>
+                    71-75 Shelton Street<br>
+                    Covent Garden<br>
+                    London, WC2H 9JQ<br>
+                    UNITED KINGDOM
+                </address>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="privacy-policy.html" class="text-white">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
